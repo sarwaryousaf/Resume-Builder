@@ -12,7 +12,7 @@ import { jsPDF } from "jspdf"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 
 const colorOptions = [
-  { name: 'Indigo', value: 'indigo' },
+  { name: 'blue', value: 'blue' },
   { name: 'Emerald', value: 'emerald' },
   { name: 'Rose', value: 'rose' },
   { name: 'Amber', value: 'amber' },
@@ -235,9 +235,6 @@ export default function ResumeBuilder() {
                   ))}
                 </RadioGroup>
               </div>
-              <Button className={`w-full bg-${selectedColor}-600 hover:bg-${selectedColor}-700 text-blue`}>
-                Generate Resume
-              </Button>
             </form>
           </motion.div>
           <motion.div
